@@ -20,11 +20,11 @@ let Iphone = function(nameIphone, ram, color, price) {
     this.setNameIphone = function (nameIphone1) {
         this.nameIphone = nameIphone1
     };
-    this.setRsam = function (ram1) {
+    this.setRam = function (ram1) {
         this.ram = ram1
     };
-    this.setColor = function (mau1) {
-        this.color = mau1
+    this.setColor = function (color1) {
+        this.color = color1
     };
     this.setPrice = function (Price1) {
         this.price = Price1
@@ -59,7 +59,8 @@ function addIphone() {
     let colorIphone = prompt("Color Iphone");
     let priceIphone = prompt("Price Iphone");
     addIphoneNew.setNameIphone(nameIphone);
-    addIphoneNew.setRsam(ramIphone);
+    addIphoneNew.setRam(ramIphone);
+    addIphoneNew.setColor(colorIphone);
     addIphoneNew.setPrice(priceIphone);
     showAllIphone();
 }
